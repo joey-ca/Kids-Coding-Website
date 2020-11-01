@@ -11,14 +11,8 @@ $(function(){
           event.stopPropagation();
           form.classList.add('was-validated');
         } else {
-          $.ajax({
-      		url: '../data/welcome.html',
-      		type: 'post',
-      		success: function(data){
-      			$formSignUp.removeClass('was-validated');
-    			$formSignUp.html(data);
-      		}
-      	)};
+	  $formSignUp.removeClass('was-validated');
+          $formSignUp.load('../data/welcome.html').hide().fadeIn('fast');
         }
       }, false);
     });
