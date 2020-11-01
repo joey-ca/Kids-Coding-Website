@@ -284,6 +284,10 @@ footer small+div img {
   max-height: 100%;
 }
 
+footer #supportMenu {
+  margin-bottom: 2.5rem;
+}
+
 footer .row .container {
   margin-top: 4rem;
 }
