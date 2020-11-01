@@ -1,0 +1,278 @@
+ <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="CodeOwl is a leading coding for kids program, and makes it fun and easy to learn computer programming. Through its award-winning courses, millions of students learn how to code in real programming languages.">
+    <meta name="author" content="Joey Zhao">
+
+    <title>Coding for Kids | CodeOwl</title>
+
+<!--     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/jumbotron/">
+ -->
+    <link rel="icon" href="img/owl_logo.png" sizes="32x32"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this index -->
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+  <body>
+    
+     <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="img/owl_logo.png">
+          <span class="text-success align-middle d-sm-none d-md-inline">CODE</span><span class="align-middle d-sm-none d-md-inline">OWL</span>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
+          <ul class="navbar-nav">
+            <span class="border-bottom d-block d-sm-none"></span>
+            <li class="nav-item px-sm-3 text-nowrap">
+              <a class="nav-link text-dark" href="#features">Features</a>
+            </li>
+            <span class="border-bottom d-block d-sm-none"></span>
+            <li class="nav-item px-sm-3 text-nowrap">
+              <a class="nav-link text-dark" href="#why">Why Us</a>
+            </li>
+            <span class="border-bottom d-block d-sm-none"></span>
+            <li class="nav-item px-sm-3 text-nowrap">
+              <a class="nav-link text-dark" href="#contact">Contact Us</a>
+            </li>
+            <span class="border-bottom d-block d-sm-none"></span>
+            <li class="nav-item text-nowrap d-block d-sm-none"> 
+              <a class="nav-link text-dark" href="#" data-toggle="modal" data-target="#signUpForm">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+
+        <a class="btn btn-sm btn-outline-success text-nowrap d-none d-sm-block" href="#" data-toggle="modal" data-target="#signUpForm">Sign Up</a>        
+      </div>
+    </nav>
+    
+
+<!-- Sign Up Form-->
+<div class="modal fade" id="signUpForm">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+        <button class="close justify-content-end" type="button" data-dismiss="modal">&times;</button>
+        
+        <form class="form-signup" method="POST" action="data/welcome.html" novalidate>
+          <h1 class="h3 mb-3 font-weight-light text-center">Let's create your account</h1>
+          
+          <div class="form-row">
+              <div class="col form-label-group">
+                <input type="text" id="inputFirstName" class="form-control" placeholder="First name" name="firstName" required autofocus>
+                <label for="inputFirstName">First name</label>
+                <div class="invalid-feedback">Please provide a valid first name</div>
+              </div>
+              <div class="col form-label-group">
+                <input type="text" id="inputLastName" class="form-control" placeholder="Last name" required>
+                <label for="inputLastName">Last name</label>
+                <div class="invalid-feedback">Please provide a valid last name</div>
+              </div>
+            </div>
+
+          <div class="form-label-group">
+            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" name="email" required>
+            <label for="inputEmail">Email address</label>
+            <div class="invalid-feedback">Please provide a valid email</div>
+          </div>
+
+          <div class="form-label-group">
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+            <label for="inputPassword">Password</label>
+            <div class="invalid-feedback">Please provide a valid password</div>
+          </div>
+          
+          <div class="checkbox mb-3">            
+            <input type="checkbox" id="invalidCheck" value="term-agreement" required> &nbsp;I agree to CodeOwl's <a class="text-success" href="#">Terms</a>, <a class="text-success" href="#">Data Policy</a> and <a class="text-success" href="#">Cookies Policy</a>
+            <div class="invalid-feedback">You must agree before submitting</div>
+          </div>
+          <button class="btn btn-lg btn-success btn-block" type="submit">Sign up</button>
+        </form>
+      </div>   
+    </div>
+  </div>
+</div>
+
+<main role="main"> 
+  <!-- Main jumbotron -->
+  <div class="jumbotron">
+    <div class="container text-center">
+      <h1 class="display-4 text-white font-weight-normal mt-1 mt-lg-4">Coding Made Easy</h1>
+      <p class="text-white font-weight-light">The fun way to learn programming and develop problem solving skills! </p>
+      <p><a class="btn btn-warning btn-lg mt-2 mt-lg-5" href="#" role="button" data-toggle="modal" data-target="#signUpForm">START FOR FREE</a></p>
+    </div>
+  </div>
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- START THE FEATURETTES -->
+    <h1 class="text-center font-weight-light mb-5 mb-lg-4" id="features">ALL YOU NEED IN <span class="text-success">ONE</span> PLACE</h1>
+    <div class="row featurette justify-content-between align-items-end">
+      <div class="col-lg-5 mt-lg-n5">
+        <h2 class="featurette-heading mb-4 slide-left-row-1">CLASSROOM MANAGEMENT</h2>
+        <p class="lead slide-left-row-1">Equipped with student solutions, automatic grading and curriculum management, CodeOwl’s Classroom Dashboard allows you to effortlessly manage your students. Fully-detailed coding lessons will help you more easily conduct your classes through engaging activities as well as a distinctive mode for teaching versus playing.</p>
+        <p><a class="btn btn-success btn-lg mt-4 slide-left-row-1" href="#/" role="button">Teachers, start here &raquo;</a></p>
+      </div>
+      <div class="col-lg-6">
+        <img class="img-fluid slide-down-row-1" src="img/realpicture_1_small.png">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette justify-content-between align-items-end">
+      <div class="col-lg-5 order-lg-2 mt-lg-n5">
+        <h2 class="featurette-heading mb-4 slide-right-row-2">PROFESSIONAL DEVELOPMENT</h2>
+        <p class="lead slide-right-row-2">Whether you are just starting or are ready to teach advanced courses, CodeOwl's free webinars, video tutorials, MOOC course and full-time PD staff will guide you every step of the way.</p>
+        <p><a class="btn btn-success btn-lg mt-4 slide-right-row-2" href="#/" role="button">Learners, start here &raquo;</a></p>
+      </div>
+      <div class="col-lg-6 order-lg-1">
+        <img class="img-fluid slide-down-row-2" src="img/realpicture_2_small.png">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette justify-content-between align-items-end">
+      <div class="col-lg-5 mt-lg-n5">
+        <h2 class="featurette-heading mb-4 slide-left-row-3">STANDARDS ALIGNMENT</h2>
+        <p class="lead slide-left-row-3">CodeOwl places a high emphasis on content that aligns to today’s standards. With online challenges and unplugged activities, students not only develop coding skills, but also computational thinking, collaboration, reasoning and logic.</p>
+        <p><a class="btn btn-success btn-lg mt-4 slide-left-row-3" href="#/" role="button">Give them the chance &raquo;</a></p>
+      </div>
+      <div class="col-lg-6">
+        <img class="img-fluid slide-down-row-3" src="img/realpicture_3.png">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+     <!-- Three columns of text -->
+    <h1 class="text-center font-weight-light" id="why"><span class="text-success">WHY</span> LEARN CODING WITH US</h1>
+    <div class="row mt-5">
+      <div class="col-lg-4 mb-5 mb-lg-0">
+        <img class="mb-4 slide-left-row-4" src="img/icon_personalize.png" alt="Personalized learning">
+        <h4 class="font-weight-light text-success slide-left-row-4">PERSONALIZED LEARNING</h4>
+        <p class="font-weight-light slide-left-row-4">Students practice at their own pace, first filling in gaps in their understanding and then accelerating their learning</p>
+      </div>
+      <div class="col-lg-4 mb-5 mb-lg-0">
+        <img class="mb-4 slide-down-row-4" src="img/icon_trusted.png" alt="Trusted content">
+        <h4 class="font-weight-light text-success slide-down-row-4">TRUSTED CONTENT</h4>
+        <p class="font-weight-light slide-down-row-4">Created by experts, CodeOwl’s library of trusted practice and lessons covers over 3,700 learning modules, 40+ award-winning block & text-based courses</p>
+      </div>
+      <div class="col-lg-4">
+        <img class="mb-4 slide-right-row-4" src="img/icon_game.png" alt="Game-based learning">
+        <h4 class="font-weight-light text-success slide-right-row-4">GAME-BASED LEARNING</h4>
+        <p class="font-weight-light slide-right-row-4">Kids learn coding in an engaging and rewarding environment that utilizes gaming elements</p>
+      </div>
+    </div><!-- /.row -->
+
+    <hr class="featurette-divider">
+
+    <!-- Contact Us section -->
+    <h1 class="text-center font-weight-light" id="contact">CONTACT <span class="text-success">US</span></h1>
+    <div id="mapContainer">
+      <div class="embed-responsive embed-responsive-21by9">
+        <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44808.505867320935!2d-75.73684532174333!3d45.41878387910045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0454652a03e3%3A0x180d3a0c5133db25!2sDare%20Corporate%20Center!5e0!3m2!1sen!2sca!4v1603827232967!5m2!1sen!2sca" aria-hidden="false" tabindex="0" allowfullscreen></iframe>
+      </div>
+    </div>
+    <!-- End Contact Us section -->
+
+    <hr class="featurette-divider">
+
+    <h1 class="text-center mb-2"><span class="text-success">FREE</span> TRIAL</h1>
+    <p class="font-weight-light text-center">Enjoy a full-blown gaming experience that will teach your kids to code!</p>
+    <p class="text-center"><a class="btn btn-warning btn-lg mt-2" href="#" role="button" data-toggle="modal" data-target="#signUpForm">START TODAY</a></p>
+  </div><!-- /.container -->
+</main>
+
+<footer class="pt-5 pb-3 bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-4 mb-3 mr-lg-5">
+        <h5 class="text-success">ABOUT CODEOWL</h5>
+        <small>CodeOwl is a leading coding for kids program. Through its award-winning courses, millions of students learn how to code in real programming languages. CodeOwl offers an engaging and enjoyable curriculum for schools, after-school clubs and camps as well as self-paced online courses to learn coding at home.</small>
+      </div>
+      <div class="col-6 col-md pl-lg-5">
+        <h5 class="text-success">COMPANY</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#/">About Us</a></li>
+          <li><a class="text-muted" href="#/">Blog</a></li>
+          <li><a class="text-muted" href="#/">Jobs</a></li>
+          <li><a class="text-muted" href="#/">Press</a></li>
+          <li><a class="text-muted" href="#/">Partners</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5 class="text-success">CURRICULUM</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#/">Courses</a></li>
+          <li><a class="text-muted" href="#/">Standards</a></li>
+          <li><a class="text-muted" href="#/">Plans</a></li>
+          <li><a class="text-muted" href="#/">Hour of Code</a></li>
+          <li><a class="text-muted" href="#/">Summer Camp</a></li>
+          <li><a class="text-muted" href="#/">Microsoft Store</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5 class="text-success">EDUCATORS</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#/">Teachers</a></li>
+          <li><a class="text-muted" href="#/">Parents</a></li>
+          <li><a class="text-muted" href="#/">Ambassadors</a></li>
+          <li><a class="text-muted" href="#/">Webinars</a></li>
+          <li><a class="text-muted" href="#/">Code Rush</a></li>
+          <li><a class="text-muted" href="#/">CB Competition</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5 class="text-success">SUPPORT</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#/">Help Center</a></li>
+          <li><a class="text-muted" href="#/">Contact Us</a></li>
+          <li><a class="text-muted" href="#/">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="text-center">
+      <small>&copy; 2020 CodeOwl Inc.</small>
+      <div class="d-inline text-right">
+        <a class="mx-1 mx-md-3" href="#/"><img src="img/facebook.png"></a>
+        <a class="mx-1 mx-md-3" href="#/"><img src="img/twitter.png"></a>
+        <a class="mx-1 mx-md-3" href="#/"><img src="img/instagram.png"></a>
+        <a class="ml-1 ml-md-3" href="#/"><img src="img/linkedin.png"></a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>window.jQuery || document.write('<script src="js/jquery-3.5.1.min.js"><\/script>')</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+<script src="js/jquery.scrollSlide.js"></script>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
