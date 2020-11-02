@@ -11,7 +11,9 @@ $(function(){
           event.stopPropagation();
           form.classList.add('was-validated');
         } else {
-          $formSignUp.load('https://joey-ca.github.io/kids-coding/data/welcome.html').hide().fadeIn('fast');
+           $.get('https://joey-ca.github.io/kids-coding/data/welcome.html', function(data){
+          	$formSignUp.html(data).hide().fadeIn('fast');
+           });
         }
       }, false);
     });
