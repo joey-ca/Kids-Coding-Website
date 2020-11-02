@@ -1,0 +1,32 @@
+<h1 class="h3 mb-3 font-weight-light text-center">Let's create your account</h1>
+          
+<div class="form-row">
+  <div class="col form-label-group">
+    <input type="text" id="inputFirstName" class="form-control" placeholder="First name" name="firstName" required autofocus>
+    <label for="inputFirstName">First name</label>
+    <div class="invalid-feedback">Please provide a valid first name</div>
+  </div>
+  <div class="col form-label-group">
+    <input type="text" id="inputLastName" class="form-control" placeholder="Last name" required>
+    <label for="inputLastName">Last name</label>
+    <div class="invalid-feedback">Please provide a valid last name</div>
+  </div>
+</div>
+
+<div class="form-label-group">
+  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" name="email" required>
+  <label for="inputEmail">Email address</label>
+  <div class="invalid-feedback">Please provide a valid email</div>
+</div>
+
+<div class="form-label-group">
+  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+  <label for="inputPassword">Password</label>
+  <div class="invalid-feedback">Please provide a valid password</div>
+</div>
+          
+<div class="checkbox mb-3">            
+  <input type="checkbox" id="invalidCheck" value="term-agreement" required> &nbsp;I agree to CodeOwl's <a class="text-success" href="#">Terms</a>, <a class="text-success" href="#">Data Policy</a> and <a class="text-success" href="#">Cookies Policy</a>
+  <div class="invalid-feedback">You must agree before submitting</div>
+</div>
+<button class="btn btn-lg btn-success btn-block" type="submit">Sign up</button>
