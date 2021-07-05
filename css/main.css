@@ -35,8 +35,8 @@ nav>div.container {
 
 a.nav-link:hover {
   color: #007E33 !important;
+  text-decoration: underline #007E33;
   -webkit-text-decoration: underline #007E33;
-          text-decoration: underline #007E33;
 }
 
 .navbar a.btn {
@@ -104,12 +104,25 @@ a.nav-link:hover {
   color: transparent;
 }
 
+.form-label-group input::-moz-placeholder {
+  color: transparent;
+}
+
 .form-label-group input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-ms-input-placeholder {
   color: transparent;
 }
 
 .form-label-group input::placeholder {
   color: transparent;
+}
+
+.form-label-group input:not(:-moz-placeholder-shown) {
+  padding-top: 1.25rem;
+  padding-bottom: .25rem;
 }
 
 .form-label-group input:not(:-ms-input-placeholder) {
@@ -120,6 +133,13 @@ a.nav-link:hover {
 .form-label-group input:not(:placeholder-shown) {
   padding-top: 1.25rem;
   padding-bottom: .25rem;
+}
+
+.form-label-group input:not(:-moz-placeholder-shown) ~ label {
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  font-size: 12px;
+  color: #777;
 }
 
 .form-label-group input:not(:-ms-input-placeholder) ~ label {
@@ -141,10 +161,10 @@ a.nav-link:hover {
 
 @supports (-ms-ime-align: auto) {
   .form-label-group {
-    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    -webkit-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
 
   .form-label-group label {
@@ -235,10 +255,8 @@ a.nav-link:hover {
 }
 
 #mapContainer {
-  display: -webkit-flex;
   display: flex;
-  -webkit-justify-content: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .marketing a.btn-warning {
@@ -266,8 +284,12 @@ footer small+div img {
   max-height: 100%;
 }
 
+footer #supportMenu {
+  margin-bottom: 2.5rem;
+}
+
 footer .row .container {
-  margin-top: 2.7rem;
+  margin-top: 4rem;
 }
 
 footer .row img {
@@ -287,6 +309,7 @@ footer .row img {
 .featurette img {
   -webkit-transform: scale(1);
   transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
 
 }
@@ -303,8 +326,7 @@ footer .row img {
 
 .btn-warning:hover {
   color: #ffffff;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
   transition: .5s ease-in-out;
   background-color: #ffbb33;
   border: none;

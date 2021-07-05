@@ -11,6 +11,7 @@ $(function(){
           event.stopPropagation();
           form.classList.add('was-validated');
         } else {
+        /*
           $.ajax({
       		url: '../data/welcome.html',
       		type: 'post',
@@ -19,18 +20,25 @@ $(function(){
     			$formSignUp.html(data);
       		}
       	)};
+        */
+           $.get('https://joey-ca.github.io/kids-coding/data/welcome.html', function(data){
+          	$formSignUp.html(data).hide().fadeIn('slow');
+           });
         }
       }, false);
     });
 
     $('.modal').on('hidden.bs.modal', function(){	
-    	$formSignUp.trigger('reset');
+    	$.get('https://joey-ca.github.io/kids-coding/data/form.html', function(data){
+             $formSignUp.html(data);
+        });
+	    $formSignUp.trigger('reset');
     	$formSignUp.removeClass('was-validated');
-	});
+    });
 
-	$(document).on('click', function () {
+    $(document).on('click', function () {
     	$('.navbar-collapse').collapse('hide');
-  	});
+    });
 
   	/* Slide In Animation */
 
