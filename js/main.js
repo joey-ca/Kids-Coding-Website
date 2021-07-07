@@ -1,5 +1,12 @@
 $(function(){
   'use strict';
+    const $navLabel = $('.sidebarIconToggle');
+    const $navList = $('ul.navbar-nav');
+
+    $navList.on('click', function(){
+    	$navLabel.click();	
+    });
+
     var forms = document.getElementsByClassName('form-signup');
     var $formSignUp = $('.form-signup');
     
